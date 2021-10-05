@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "849830527644",
+    "project_id": "otp-verification-b8050",
+    "storage_bucket": "otp-verification-b8050.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849830527644:android:d7c01dded270ec0003a359",
+        "android_client_info": {
+          "package_name": "com.ziziapps.firebaseotp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849830527644-tk3rkpsnvghtibjfh1sj9tqi1qj1qbgo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ziziapps.firebaseotp",
+            "certificate_hash": "43f7c2fe0c3ad0bcbca6e4922a9cc78feaa00b1c"
+          }
+        },
+        {
+          "client_id": "849830527644-oummmaosodkcko2n90uefmbbucrp89ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWoICRH8ky4R54p-y4etvWJbpousvG1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849830527644-oummmaosodkcko2n90uefmbbucrp89ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".SendOTPActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimns_130dp"
+            android:layout_height="@dimen/dimns_130dp"
+            android:layout_marginTop="@dimen/dimns_80dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/send"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimns_24dp"
+            android:text="@string/otp_verification"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/dimns_24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimns_50dp"
+            android:layout_marginEnd="@dimen/dimns_50dp"
+            android:layout_marginTop="@dimen/dimns_8dp"
+            android:gravity="center"
+            android:text="@string/we_will_send_you_an_one_time_password_on_this_mobile_number"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/dimns_14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimns_32dp"
+            android:layout_marginEnd="@dimen/dimns_32dp"
+            android:layout_marginTop="@dimen/dimns_50dp"
+            android:gravity="center"
+            android:text="@string/enter_mobile_number"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/dimns_14sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimns_60dp"
+            android:layout_marginEnd="@dimen/dimns_60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_send_otp_tv_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimns_40dp"
+                android:gravity="center"
+                android:text="@string/_20"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/dimns_16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/activity_send_otp_et_number"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimns_40dp"
+                android:background="@null"
+                android:hint="@string/hint_number"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/dimns_16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimns_2dp"
+            android:layout_marginStart="@dimen/dimns_64dp"
+            android:layout_marginEnd="@dimen/dimns_64dp"
+            android:layout_marginTop="@dimen/dimns_8dp"
+            android:background="@color/colorDivider"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/activity_send_otp_btn_get_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimns_32dp"
+                android:background="@drawable/shape_bg_button"
+                android:text="@string/get_otp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimns_16sp"
+                android:textStyle="bold"/>
+
+            <ProgressBar
+                android:id="@+id/activity_send_otp_pb_loading"
+                android:layout_width="@dimen/dimns_40dp"
+                android:layout_height="@dimen/dimns_40dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>
